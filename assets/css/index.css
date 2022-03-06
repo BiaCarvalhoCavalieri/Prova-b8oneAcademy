@@ -1,0 +1,166 @@
+body{
+  background-color: #142159;
+}
+
+/* Main */
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.card-login {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px 16px;
+  width: 328px;
+  height: 428px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+/* Card - Title e Subtitle */
+
+.card-login__titles{
+  align-items: center;
+}
+
+.login-title{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333333;
+}
+
+.login-subtitle{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #555555;
+  letter-spacing: -0.005em;
+  margin-top: 8px;
+}
+
+/* Card - User informations */
+
+.card-login__informations{
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-email__title, .login-password__title{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #333333;
+  align-items: flex-start;
+}
+
+.login-email__input, .login-password{
+  width: 296px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #555555;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.login-password{
+  display: flex;
+  align-items: center;
+
+}
+.login-password__input{
+  border: none;
+}
+
+.login-connect-forgot{
+  display: flex;
+}
+
+.login-forgot__password{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: -0.005em;
+  text-decoration-line: underline;
+  color: #425DC7;
+  margin: 0px 4px;
+}
+
+.login-keep-connected__checkbox--text{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #333333;
+}
+
+.login-get-in__btn{
+  padding: 12px 24px;
+  width: 296px;
+  height: 48px;
+  background: #425DC7;
+  border-radius: 8px;
+  margin: 24px 0px 16px;
+  transition: all .3s ease-in-out;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.login-get-in__btn:hover{
+  opacity: 0.7;
+}
+
+
+@media screen and (min-width: 768px) {
+  .card-login {
+    padding: 48px;
+    width: 432px;
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+  .login-title{
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+  }
+  .login-subtitle{
+    text-align: left;
+  }
+  .card-login__informations{
+    margin-top: 32px;
+  }
+  .login-email__input, .login-password{
+    width: 336px;
+  }
+  .login-password{
+    justify-content: space-between;
+  }
+  .login-keep-connected__checkbox--text{
+    color: #000000;
+  }
+
+  .login-connect-forgot{
+    justify-content: space-between;
+  }
+
+  .login-get-in__btn{
+    width: 336px;
+    margin: 32px 48px 48px 0;
+  }
+}

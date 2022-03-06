@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Prova Academy - Fase 2</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+<body>
+  <main class="main-container">
+    <div class="card-login">
+      <div class="card-login__titles">
+        <h1 class="login-title">Olá, tudo bem? 👋</h1>
+        <h2 class="login-subtitle">Vamos decolar para grandes dias de vendas.</h2>
+      </div>
+      <div class="card-login__informations">
+        <span class="login-email__title">Seu E-mail</span>
+        <input type="email" class="login-email__input" placeholder="exemplo@email.com"/>
+        <span class="login-password__title">Sua Senha</span>
+        <div class="login-password">
+          <input type="password" class="login-password__input" placeholder="Digite sua senha"/>
+          <button class="login-password__button">
+            <svg class="login-password__button--visible"width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.3127 15.3127C15.0131 15.6343 14.6518 15.8922 14.2503 16.071C13.8489 16.2499 13.4155 16.3461 12.9761 16.3539C12.5367 16.3616 12.1002 16.2808 11.6927 16.1162C11.2852 15.9516 10.915 15.7066 10.6042 15.3958C10.2934 15.085 10.0484 14.7149 9.88383 14.3073C9.71923 13.8998 9.63839 13.4633 9.64615 13.0239C9.6539 12.5845 9.75008 12.1511 9.92896 11.7497C10.1078 11.3482 10.3657 10.9869 10.6873 10.6873M19.48 19.48C17.6152 20.9015 15.3445 21.6889 13 21.7273C5.36364 21.7273 1 13 1 13C2.35697 10.4712 4.23906 8.26176 6.52 6.52001L19.48 19.48ZM10.7091 4.53455C11.46 4.35878 12.2288 4.27092 13 4.27273C20.6364 4.27273 25 13 25 13C24.3378 14.2388 23.5481 15.4052 22.6436 16.48L10.7091 4.53455Z" stroke="#425DC7" stroke-width="1.5"/>
+              <path d="M1 1L25 25" stroke="#142159" stroke-width="1.5"/>
+            </svg>
+          </button>
+        </div>
+        <div class="login-connect-forgot">
+          <div class="login-keep-connected">
+            <input type="checkbox" class="login-keep-connected__checkbox">
+              <span class="login-keep-connected__checkbox--text">  
+                Manter conectado  
+              </span>
+            </input>
+          </div>
+          <a href="#" class="login-forgot__password">Esqueci minha senha</a>
+        </div>
+        <button class="login-get-in__btn" onclick="login()">
+          Entrar
+        </button>
+      </div>
+    </div>
+  </main>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
