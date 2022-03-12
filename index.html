@@ -23,15 +23,21 @@
       </div>
       <div class="card-login__informations">
         <span class="login-email__title">Seu E-mail</span>
-        <input type="email" class="login-email__input" placeholder="exemplo@email.com"/>
+        <input type="email" class="login-email__input" placeholder="exemplo@email.com" onkeydown="validatedEmail()"/>
+        <span class="login-email__error disabled"> Este e-mail não existe, você tem outro? </span>
         <span class="login-password__title">Sua Senha</span>
         <div class="login-password">
           <input type="password" class="login-password__input" placeholder="Digite sua senha"/>
-          <button class="login-password__button">
-            <svg class="login-password__button--visible"width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="login-password__button" onclick="passwordVisible()">
+            <svg class="login-password__button--invisible" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.3127 15.3127C15.0131 15.6343 14.6518 15.8922 14.2503 16.071C13.8489 16.2499 13.4155 16.3461 12.9761 16.3539C12.5367 16.3616 12.1002 16.2808 11.6927 16.1162C11.2852 15.9516 10.915 15.7066 10.6042 15.3958C10.2934 15.085 10.0484 14.7149 9.88383 14.3073C9.71923 13.8998 9.63839 13.4633 9.64615 13.0239C9.6539 12.5845 9.75008 12.1511 9.92896 11.7497C10.1078 11.3482 10.3657 10.9869 10.6873 10.6873M19.48 19.48C17.6152 20.9015 15.3445 21.6889 13 21.7273C5.36364 21.7273 1 13 1 13C2.35697 10.4712 4.23906 8.26176 6.52 6.52001L19.48 19.48ZM10.7091 4.53455C11.46 4.35878 12.2288 4.27092 13 4.27273C20.6364 4.27273 25 13 25 13C24.3378 14.2388 23.5481 15.4052 22.6436 16.48L10.7091 4.53455Z" stroke="#425DC7" stroke-width="1.5"/>
               <path d="M1 1L25 25" stroke="#142159" stroke-width="1.5"/>
             </svg>
+            <svg class="login-password__button--visible disabled" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 12C1 12 5.36364 3 13 3C20.6364 3 25 12 25 12C25 12 20.6364 21 13 21C5.36364 21 1 12 1 12Z" stroke="#425DC7" stroke-width="1.5"/>
+              <path d="M13 15.3745C14.8075 15.3745 16.2727 13.8635 16.2727 11.9995C16.2727 10.1356 14.8075 8.62451 13 8.62451C11.1925 8.62451 9.72729 10.1356 9.72729 11.9995C9.72729 13.8635 11.1925 15.3745 13 15.3745Z" stroke="#142159" stroke-width="1.5"/>
+            </svg>
+              
           </button>
         </div>
         <div class="login-connect-forgot">
@@ -50,6 +56,6 @@
       </div>
     </div>
   </main>
-  <script src="./scripts/main.js"></script>
+  <script src="./scripts/login.js"></script>
 </body>
 </html>

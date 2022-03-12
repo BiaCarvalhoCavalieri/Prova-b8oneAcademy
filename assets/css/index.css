@@ -71,16 +71,42 @@ body{
   border-radius: 8px;
   padding: 12px 16px;
   margin-top: 8px;
-  margin-bottom: 16px;
+
+}
+
+.login-email__input.active{
+  border: 2px solid #F03460;
 }
 
 .login-password{
   display: flex;
   align-items: center;
-
+  margin-bottom: 16px;
+}
+.login-password__title{
+  margin-top:8px;
 }
 .login-password__input{
   border: none;
+}
+.login-password__button--invisible.disabled, 
+.login-password__button--visible.disabled{
+  display: none;
+}
+
+.login-email__error {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;  
+  color: #F03460;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 8px;
+  opacity: 1;
+}
+
+.login-email__error.disabled{
+  opacity: 0;
 }
 
 .login-connect-forgot{

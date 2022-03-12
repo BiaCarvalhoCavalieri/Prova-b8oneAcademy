@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 hmtl, body{
   width: 100%;
@@ -46,6 +47,8 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 abbr[title] {
