@@ -598,15 +598,16 @@ function populateResellers({ resellers }) {
           <span class="data__seller--name">${reseller.name}</span>
           <div class="data__seller--second-row">
             <span class="data__seller--requests">${reseller.ordersCount} pedidos</span>
-            <div class="data__seller--percentage">
-              <span class="data__seller--percentage-value">${reseller.percentage}</span>`;
+            <div class="data__seller--percentage">`;
     if (Number(reseller.percentage.replaceAll('%', '')) > 0) {
       resellersHTML += `
+              <span class="data__seller--percentage-value percentage__positive">${reseller.percentage}</span>
               <svg class="percentage-icon__positive" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.9998 9.5L7.99976 6.5L4.99976 9.5" stroke="#158F2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>`;
     } else {
       resellersHTML += `
+              <span class="data__seller--percentage-value percentage__negative">${reseller.percentage}</span>
               <svg class="percentage-icon__negative" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.00024 6.5L8.00024 9.5L11.0002 6.5" stroke="#EB0045" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>`;

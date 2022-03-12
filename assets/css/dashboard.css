@@ -8,7 +8,9 @@ body{
   top: 0;
   left: 0;
 }
+
 /* HEADER */
+
 .dashboard-header{
   width: 100%;
   height: 48px;
@@ -55,7 +57,6 @@ body{
   display: none;
 }
 
-
 /* HEADER NOTIFICATIONS CARDS */
 
 .header-help__notification, .header-notice__notification, .header-user__notification{
@@ -96,11 +97,13 @@ body{
 .header-help__notification--center, .header-help__notification--tutorials{
   padding-bottom: 24px;
 }
+
 .header-help__notification--tutorials{
   display: flex;
   width: 100%;
   border-bottom: 1px solid #F1F2F9;
 }
+
 .header-help__notification--talk{
   font-weight: 600;
   font-size: 14px;
@@ -109,6 +112,7 @@ body{
   color: #425DC7;
   padding-top: 20px;
 }
+
 .header-help__notification--center, .header-help__notification--tutorials, .header-user__notification--account, .header-user__notification--Logout{
   font-weight: 500;
   font-size: 14px;
@@ -182,6 +186,7 @@ body{
   color: #555555;
   padding: 0 60px 16px 24px;
 }
+
 .notification--01__register, .notification--01__invite {
   display: flex;
   align-items: center;
@@ -192,7 +197,6 @@ body{
 .notification--01__register {
   padding-bottom: 32px;
 }
-
 
 .invite__checkbox, .register__checkbox{
   width: 20px;
@@ -208,6 +212,7 @@ body{
   letter-spacing: -0.005em;
   color: #000000;
 }
+
 .invite__text{
   display: flex;
   flex-direction: column;
@@ -223,6 +228,7 @@ body{
 .header-notice__notification--02{
   border-bottom: 1px solid #F1F2F9;
 }
+
 .notification--02__report {
   display: flex;
   align-items: flex-start;
@@ -230,10 +236,12 @@ body{
   gap: 8px;
   padding-top: 16px;
 }
+
 .notification--02__link{
   display: block;
   padding: 16px 0 16px 26px;
 }
+
 .header-notice__notification--03{
   width: 292px;
   height: 48px;
@@ -242,12 +250,14 @@ body{
   justify-content: center;
   margin-top: 12px;
 }
+
 .notification--03__viewed{
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #425DC7;
 }
+
 .header-user__item:hover .header-user__notification {
   height: 174px;
   width: 224px;
@@ -279,6 +289,7 @@ body{
   padding-bottom: 16px;
   border-bottom: 1px solid #F1F2F9;
 }
+
 .header-user__notification--name span{
   margin-left: 5px;
   color: #425DC7;
@@ -288,6 +299,8 @@ body{
   padding-top: 24px;
   padding-bottom: 16px;
 }
+
+
 /* MAIN-CONTAINER */
 
 .main-container{
@@ -491,6 +504,7 @@ body{
 }
 
 /* LEADING INFORMATIONS */
+
 .leading-informations{
   display: flex;
   flex-direction: column;
@@ -676,8 +690,6 @@ h2{
   text-align: center;
   color: #425DC7;
   padding-left: 12px;
-
- 
 }
 
 .products--item-id__text, .products--item-value__text{
@@ -685,7 +697,6 @@ h2{
   font-size: 12px;
   line-height: 20px;
   color: #333333;
-  /* margin-right: 16px; */
 }
 .insights-section__products--item:nth-child(2n){
   background-color: #F1F2F9;
@@ -824,6 +835,7 @@ h2{
   .header-user__notification:after {
     left: 100px;
   }
+
   /* ASIDE */
 
   .dashboard-aside{
@@ -859,11 +871,13 @@ h2{
     background: #FFFFFF;
     color: #425DC7;
   }
+
   /* LEADING - INFORMATIONS */
   .period__text{
     display: inline;
     padding-top: 8px;
   }
+  
   /* REPORT - SECTION */
 
   .report{
