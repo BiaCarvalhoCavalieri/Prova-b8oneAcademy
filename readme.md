@@ -10,7 +10,7 @@ link do figma: https://www.figma.com/file/F4d4sysbY6agIpFk0sHLMr/Prova-Academy--
 ## 🔧 Funcionabilidades
 
 ### Função 01:
-- Autenticação Login e redirecionamento para página principal.
+- Autenticação Login e redirecionamento para página principal. Acesso email: academy@b8one.com, senha: Academy2022.
 
 ### Função 02:
 - Uso da API para validação login e popular os seguintes itens: Dados do user no header, menu localizado no ASIDE, lista de produtos, informações nas abas dos gráficos.
